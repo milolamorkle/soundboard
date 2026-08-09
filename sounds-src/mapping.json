@@ -1,0 +1,308 @@
+[
+  {
+    "file": "raw/sc2-marine-ready-0.aiff",
+    "game": "sc2",
+    "faction": "terran",
+    "unit": "marine",
+    "unitName": "Marine",
+    "type": "ready",
+    "text": "You want a piece of me, boy?"
+  },
+  {
+    "file": "raw/sc2-marine-select-1.aiff",
+    "game": "sc2",
+    "faction": "terran",
+    "unit": "marine",
+    "unitName": "Marine",
+    "type": "select",
+    "text": "Commander?"
+  },
+  {
+    "file": "raw/sc2-marine-move-2.aiff",
+    "game": "sc2",
+    "faction": "terran",
+    "unit": "marine",
+    "unitName": "Marine",
+    "type": "move",
+    "text": "Go go go!"
+  },
+  {
+    "file": "raw/sc2-marine-attack-3.aiff",
+    "game": "sc2",
+    "faction": "terran",
+    "unit": "marine",
+    "unitName": "Marine",
+    "type": "attack",
+    "text": "Let’s rock and roll!"
+  },
+  {
+    "file": "raw/sc2-marine-annoyed-4.aiff",
+    "game": "sc2",
+    "faction": "terran",
+    "unit": "marine",
+    "unitName": "Marine",
+    "type": "annoyed",
+    "text": "How do I get out of this chicken outfit?"
+  },
+  {
+    "file": "raw/sc2-scv-ready-5.aiff",
+    "game": "sc2",
+    "faction": "terran",
+    "unit": "scv",
+    "unitName": "SCV",
+    "type": "ready",
+    "text": "SCV, good to go, sir."
+  },
+  {
+    "file": "raw/sc2-scv-select-6.aiff",
+    "game": "sc2",
+    "faction": "terran",
+    "unit": "scv",
+    "unitName": "SCV",
+    "type": "select",
+    "text": "Yo?"
+  },
+  {
+    "file": "raw/sc2-scv-move-7.aiff",
+    "game": "sc2",
+    "faction": "terran",
+    "unit": "scv",
+    "unitName": "SCV",
+    "type": "move",
+    "text": "I’m going!"
+  },
+  {
+    "file": "raw/sc2-battlecruiser-ready-8.aiff",
+    "game": "sc2",
+    "faction": "terran",
+    "unit": "battlecruiser",
+    "unitName": "Battlecruiser",
+    "type": "ready",
+    "text": "Battlecruiser operational."
+  },
+  {
+    "file": "raw/sc2-battlecruiser-move-9.aiff",
+    "game": "sc2",
+    "faction": "terran",
+    "unit": "battlecruiser",
+    "unitName": "Battlecruiser",
+    "type": "move",
+    "text": "Make it happen."
+  },
+  {
+    "file": "raw/sc2-queen-ready-10.aiff",
+    "game": "sc2",
+    "faction": "zerg",
+    "unit": "queen",
+    "unitName": "Queen",
+    "type": "ready",
+    "text": "The Queen has emerged."
+  },
+  {
+    "file": "raw/sc2-queen-select-11.aiff",
+    "game": "sc2",
+    "faction": "zerg",
+    "unit": "queen",
+    "unitName": "Queen",
+    "type": "select",
+    "text": "I serve the Swarm."
+  },
+  {
+    "file": "raw/sc2-queen-attack-12.aiff",
+    "game": "sc2",
+    "faction": "zerg",
+    "unit": "queen",
+    "unitName": "Queen",
+    "type": "attack",
+    "text": "For the Swarm!"
+  },
+  {
+    "file": "raw/sc2-zealot-ready-13.aiff",
+    "game": "sc2",
+    "faction": "protoss",
+    "unit": "zealot",
+    "unitName": "Zealot",
+    "type": "ready",
+    "text": "My life for Aiur!"
+  },
+  {
+    "file": "raw/sc2-zealot-select-14.aiff",
+    "game": "sc2",
+    "faction": "protoss",
+    "unit": "zealot",
+    "unitName": "Zealot",
+    "type": "select",
+    "text": "En taro Tassadar."
+  },
+  {
+    "file": "raw/sc2-zealot-move-15.aiff",
+    "game": "sc2",
+    "faction": "protoss",
+    "unit": "zealot",
+    "unitName": "Zealot",
+    "type": "move",
+    "text": "It shall be done."
+  },
+  {
+    "file": "raw/sc2-immortal-ready-16.aiff",
+    "game": "sc2",
+    "faction": "protoss",
+    "unit": "immortal",
+    "unitName": "Immortal",
+    "type": "ready",
+    "text": "I return to serve."
+  },
+  {
+    "file": "raw/ra2-gi-ready-17.aiff",
+    "game": "ra2",
+    "faction": "allied",
+    "unit": "gi",
+    "unitName": "G.I.",
+    "type": "ready",
+    "text": "Ready and waiting."
+  },
+  {
+    "file": "raw/ra2-gi-move-18.aiff",
+    "game": "ra2",
+    "faction": "allied",
+    "unit": "gi",
+    "unitName": "G.I.",
+    "type": "move",
+    "text": "You got it!"
+  },
+  {
+    "file": "raw/ra2-gi-attack-19.aiff",
+    "game": "ra2",
+    "faction": "allied",
+    "unit": "gi",
+    "unitName": "G.I.",
+    "type": "attack",
+    "text": "Attacking!"
+  },
+  {
+    "file": "raw/ra2-tanya-select-20.aiff",
+    "game": "ra2",
+    "faction": "allied",
+    "unit": "tanya",
+    "unitName": "Tanya",
+    "type": "select",
+    "text": "What’s up?"
+  },
+  {
+    "file": "raw/ra2-tanya-attack-21.aiff",
+    "game": "ra2",
+    "faction": "allied",
+    "unit": "tanya",
+    "unitName": "Tanya",
+    "type": "attack",
+    "text": "Cha-ching!"
+  },
+  {
+    "file": "raw/ra2-rocketeer-select-22.aiff",
+    "game": "ra2",
+    "faction": "allied",
+    "unit": "rocketeer",
+    "unitName": "Rocketeer",
+    "type": "select",
+    "text": "I can go anywhere!"
+  },
+  {
+    "file": "raw/ra2-eva-ready-23.aiff",
+    "game": "ra2",
+    "faction": "allied",
+    "unit": "eva",
+    "unitName": "EVA (announcer)",
+    "type": "ready",
+    "text": "Construction complete."
+  },
+  {
+    "file": "raw/ra2-eva-ready-24.aiff",
+    "game": "ra2",
+    "faction": "allied",
+    "unit": "eva",
+    "unitName": "EVA (announcer)",
+    "type": "ready",
+    "text": "Unit ready."
+  },
+  {
+    "file": "raw/ra2-eva-ready-25.aiff",
+    "game": "ra2",
+    "faction": "allied",
+    "unit": "eva",
+    "unitName": "EVA (announcer)",
+    "type": "ready",
+    "text": "New construction options."
+  },
+  {
+    "file": "raw/ra2-conscript-select-26.aiff",
+    "game": "ra2",
+    "faction": "soviet",
+    "unit": "conscript",
+    "unitName": "Conscript",
+    "type": "select",
+    "text": "Reporting."
+  },
+  {
+    "file": "raw/ra2-conscript-attack-27.aiff",
+    "game": "ra2",
+    "faction": "soviet",
+    "unit": "conscript",
+    "unitName": "Conscript",
+    "type": "attack",
+    "text": "For home country!"
+  },
+  {
+    "file": "raw/ra2-conscript-move-28.aiff",
+    "game": "ra2",
+    "faction": "soviet",
+    "unit": "conscript",
+    "unitName": "Conscript",
+    "type": "move",
+    "text": "Moving out."
+  },
+  {
+    "file": "raw/ra2-kirov-ready-29.aiff",
+    "game": "ra2",
+    "faction": "soviet",
+    "unit": "kirov",
+    "unitName": "Kirov Airship",
+    "type": "ready",
+    "text": "Kirov reporting."
+  },
+  {
+    "file": "raw/ra2-kirov-select-30.aiff",
+    "game": "ra2",
+    "faction": "soviet",
+    "unit": "kirov",
+    "unitName": "Kirov Airship",
+    "type": "select",
+    "text": "Helium mix optimal."
+  },
+  {
+    "file": "raw/ra2-apocalypse-ready-31.aiff",
+    "game": "ra2",
+    "faction": "soviet",
+    "unit": "apocalypse",
+    "unitName": "Apocalypse Tank",
+    "type": "ready",
+    "text": "Instrument of doom."
+  },
+  {
+    "file": "raw/ra2-initiate-select-32.aiff",
+    "game": "ra2",
+    "faction": "yuri",
+    "unit": "initiate",
+    "unitName": "Initiate",
+    "type": "select",
+    "text": "I feel a presence."
+  },
+  {
+    "file": "raw/ra2-brute-attack-33.aiff",
+    "game": "ra2",
+    "faction": "yuri",
+    "unit": "brute",
+    "unitName": "Brute",
+    "type": "attack",
+    "text": "Crush, kill, destroy!"
+  }
+]

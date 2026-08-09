@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.DS_Store
+dev-dist/
+# Raw source audio is large and not committed; the processed output in public/audio is.
+sounds-src/raw/

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "sc2",
+    "name": "StarCraft II",
+    "short": "SC2",
+    "factions": [
+      {
+        "id": "terran",
+        "name": "Terran",
+        "color": "#4da3ff"
+      },
+      {
+        "id": "zerg",
+        "name": "Zerg",
+        "color": "#b06ef3"
+      },
+      {
+        "id": "protoss",
+        "name": "Protoss",
+        "color": "#f3c96e"
+      }
+    ]
+  },
+  {
+    "id": "ra2",
+    "name": "Red Alert 2",
+    "short": "RA2",
+    "factions": [
+      {
+        "id": "allied",
+        "name": "Allied",
+        "color": "#5ad1ff"
+      },
+      {
+        "id": "soviet",
+        "name": "Soviet",
+        "color": "#ff5c5c"
+      },
+      {
+        "id": "yuri",
+        "name": "Yuri",
+        "color": "#9d7bff"
+      }
+    ]
+  }
+]
