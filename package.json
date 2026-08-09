@@ -8,6 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "samples": "node scripts/make-samples.mjs",
     "ingest": "node scripts/ingest.mjs",
     "icons": "node scripts/make-icons.mjs"
@@ -15,11 +17,13 @@
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.1.2",
     "@tsconfig/svelte": "^5.0.4",
+    "happy-dom": "^14.12.3",
     "svelte": "^4.2.19",
     "svelte-check": "^3.8.6",
     "typescript": "^5.5.4",
     "vite": "^5.4.11",
-    "vite-plugin-pwa": "^0.20.5"
+    "vite-plugin-pwa": "^0.20.5",
+    "vitest": "^2.1.9"
   },
   "dependencies": {
     "minisearch": "^7.1.1"
