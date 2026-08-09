@@ -65,11 +65,11 @@
     {#if showUnit}<span class="meta">{sound.unitName}</span>{/if}
   </button>
   <span class="corner">
-    {#if isPlaying}<span class="eq" aria-hidden="true"><i /><i /><i /></span>{/if}
     <button class="star" class:on={isFav} on:click|stopPropagation={() => toggleFavorite(sound.id)} aria-label={isFav ? 'Remove favorite' : 'Add favorite'}>
       {isFav ? '★' : '☆'}
     </button>
   </span>
+  {#if isPlaying}<span class="playbar" aria-hidden="true" />{/if}
 </div>
 
 <style>
@@ -142,35 +142,32 @@
   .star.on {
     color: var(--star);
   }
-  /* tiny equalizer instead of color-only playing state */
-  .eq {
-    display: flex;
-    gap: 2px;
-    align-items: flex-end;
-    height: 12px;
+  /* playing indicator: sweeping strip along the bottom edge — never overlaps text */
+  .playbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background: color-mix(in srgb, var(--sb-accent) 30%, transparent);
+    pointer-events: none;
   }
-  .eq i {
-    width: 3px;
+  .playbar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 35%;
+    border-radius: 2px;
     background: var(--sb-accent);
-    animation: bounce 0.6s ease-in-out infinite alternate;
+    animation: sweep 0.9s linear infinite;
   }
-  .eq i:nth-child(1) {
-    height: 6px;
-  }
-  .eq i:nth-child(2) {
-    height: 11px;
-    animation-delay: 0.15s;
-  }
-  .eq i:nth-child(3) {
-    height: 8px;
-    animation-delay: 0.3s;
-  }
-  @keyframes bounce {
+  @keyframes sweep {
     from {
-      transform: scaleY(0.5);
+      left: -35%;
     }
     to {
-      transform: scaleY(1);
+      left: 100%;
     }
   }
 </style>
