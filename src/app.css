@@ -1,14 +1,31 @@
 :root {
-  --bg: #0b0f14;
-  --bg-raised: #121924;
-  --bg-hover: #1a2432;
-  --border: #223045;
-  --text: #dbe4f0;
-  --text-dim: #8294ab;
+  /* Elevation scale: progressively lighter surfaces (dark-theme best practice)
+     instead of border-heavy separation. */
+  --surface-0: #0d1117; /* page */
+  --surface-1: #151c26; /* cards, header */
+  --surface-2: #1d2735; /* hover / raised */
+  --surface-3: #263344; /* pressed / sheets */
+  --border: rgba(255, 255, 255, 0.08);
+
+  /* Text emphasis tiers (~87% / 62% / 40% of near-white). */
+  --text: rgba(232, 238, 246, 0.92);
+  --text-dim: rgba(232, 238, 246, 0.64);
+  --text-faint: rgba(232, 238, 246, 0.42);
+
   --accent: #4da3ff;
-  --danger: #ff5c5c;
+  --danger: #ff6b6b;
   --star: #ffc94d;
+
+  /* 8pt rhythm */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+
   --radius: 12px;
+  --radius-sm: 9px;
   color-scheme: dark;
 }
 
@@ -20,7 +37,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: var(--bg);
+  background: var(--surface-0);
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   -webkit-tap-highlight-color: transparent;
@@ -45,23 +62,38 @@ a {
   text-decoration: none;
 }
 
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 .container {
-  max-width: 720px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 0 14px 40px;
+  padding: 0 var(--sp-4) 40px;
 }
 
 h1,
 h2,
 h3 {
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
 }
 
 .crumb {
   color: var(--text-dim);
   font-size: 0.85rem;
-  margin: 14px 0 4px;
+  margin: var(--sp-4) 0 var(--sp-1);
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
@@ -78,26 +110,31 @@ h3 {
 /* Big tappable navigation cards (games, factions, units) */
 .cardlist {
   display: grid;
-  gap: 10px;
-  margin-top: 14px;
+  gap: var(--sp-3);
+  margin-top: var(--sp-4);
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
 }
 .navcard {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  gap: var(--sp-3);
   width: 100%;
   text-align: left;
-  background: var(--bg-raised);
+  background: var(--surface-1);
   border: 1px solid var(--border);
   border-left: 4px solid var(--card-accent, var(--accent));
   border-radius: var(--radius);
-  padding: 16px;
-  transition: background 0.12s;
+  padding: var(--sp-4);
+  min-height: 64px;
+  transition: background 0.12s, transform 0.08s;
 }
-.navcard:active,
 .navcard:hover {
-  background: var(--bg-hover);
+  background: var(--surface-2);
+}
+.navcard:active {
+  background: var(--surface-2);
+  transform: scale(0.985);
 }
 .navcard .title {
   font-weight: 600;
@@ -109,6 +146,40 @@ h3 {
   margin-top: 2px;
 }
 .navcard .chev {
-  color: var(--text-dim);
+  color: var(--text-faint);
   flex: none;
+}
+
+/* Dense sound-tile grid: ~2 cols on phones, more as width allows. */
+.soundgrid {
+  display: grid;
+  gap: var(--sp-3);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+/* Filter chips */
+.chip {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 7px 14px;
+  min-height: 34px;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  background: var(--surface-1);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.12s;
+}
+.chip:hover {
+  background: var(--surface-2);
+}
+.chip.on {
+  color: var(--text);
+  border-color: var(--chip-accent, var(--accent));
+  background: color-mix(in srgb, var(--chip-accent, var(--accent)) 20%, var(--surface-1));
+}
+.chip .x {
+  color: var(--text-faint);
+  font-size: 0.95em;
 }

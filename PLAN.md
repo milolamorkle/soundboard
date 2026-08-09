@@ -55,7 +55,13 @@ Node script using ffmpeg. Because the source format/naming is TBD, the pipeline 
   reliable on iOS where multiple `<audio>` elements are flaky. Decoded buffers cached in memory (LRU).
 - **Search:** MiniSearch (tiny client-side full-text engine) indexing transcript + unit + faction +
   line type, with prefix and fuzzy matching. Search bar pinned in the header on every screen;
-  results show instantly as you type. Filter chips: game, faction, line type.
+  results show instantly as you type. Faceted-search layer (`src/lib/suggest.ts`): browse
+  ("scope") suggestions jump to matching game/faction/unit pages; facet words inside a longer
+  query ("terran attack") offer a one-tap removable filter chip; active filters show as chips
+  with ✕ and Clear all.
+- **Sound tiles:** dense responsive grid (auto-fill minmax(150px, 1fr)) — tap plays, corner ☆
+  favorites, long-press/right-click opens a bottom action sheet (share, go to unit). Scales to
+  hundreds of lines per unit where full-width rows would not.
 - **Favorites:** star any sound → saved in `localStorage`; a Favorites tab lists them. No accounts.
 - **Virtualized lists** for any long view so mobile scrolling stays smooth.
 

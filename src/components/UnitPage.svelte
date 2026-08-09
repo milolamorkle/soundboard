@@ -25,8 +25,8 @@
     <h1 style="color: {faction.color}">{unitName}</h1>
     {#each groups as [type, groupSounds] (type)}
       <section>
-        <h2>{TYPE_LABELS[type] ?? type}</h2>
-        <div class="sounds">
+        <h2>{TYPE_LABELS[type] ?? type} <span class="n">{groupSounds.length}</span></h2>
+        <div class="soundgrid">
           {#each groupSounds as s (s.id)}
             <SoundButton sound={s} accent={faction.color} />
           {/each}
@@ -48,10 +48,10 @@
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--text-dim);
-    margin: 20px 0 8px;
+    margin: var(--sp-5) 0 var(--sp-2);
   }
-  .sounds {
-    display: grid;
-    gap: 8px;
+  .n {
+    color: var(--text-faint);
+    font-weight: 400;
   }
 </style>

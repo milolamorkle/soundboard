@@ -4,6 +4,7 @@
   import { loadCatalog } from './lib/catalog';
   import Header from './components/Header.svelte';
   import SearchResults from './components/SearchResults.svelte';
+  import ActionSheet from './components/ActionSheet.svelte';
   import Home from './components/Home.svelte';
   import GamePage from './components/GamePage.svelte';
   import FactionPage from './components/FactionPage.svelte';
@@ -18,8 +19,10 @@
 
 <Header bind:query />
 
+<ActionSheet />
+
 {#if searching}
-  <SearchResults {query} />
+  <SearchResults bind:query />
 {:else if $loadError}
   <div class="container state">
     <p>Couldn’t load the sound catalog ({$loadError}).</p>
@@ -60,7 +63,7 @@
     border: 1px solid var(--border);
     border-radius: 999px;
     padding: 8px 18px;
-    background: var(--bg-raised);
+    background: var(--surface-1);
     color: var(--text);
   }
 </style>

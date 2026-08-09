@@ -42,7 +42,7 @@
     position: sticky;
     top: 0;
     z-index: 10;
-    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    background: color-mix(in srgb, var(--surface-0) 88%, transparent);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
@@ -69,7 +69,7 @@
   input {
     flex: 1;
     min-width: 0;
-    background: var(--bg-raised);
+    background: var(--surface-1);
     border: 1px solid var(--border);
     border-radius: 999px;
     color: var(--text);

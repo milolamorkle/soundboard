@@ -16,7 +16,7 @@
   {#if favSounds.length === 0}
     <p class="hint">No favorites yet — tap the ☆ on any sound to keep it here.</p>
   {:else}
-    <div class="sounds">
+    <div class="soundgrid">
       {#each favSounds as s (s.id)}
         <SoundButton sound={s} accent={accentFor(s)} showUnit />
       {/each}
@@ -33,9 +33,5 @@
     color: var(--text-dim);
     text-align: center;
     margin-top: 30px;
-  }
-  .sounds {
-    display: grid;
-    gap: 8px;
   }
 </style>
